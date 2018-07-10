@@ -41,12 +41,11 @@ public class webtest {
 		driver.get("https://www.google.com");		
 		
 		driver.findElement(By.id("lst-ib")).sendKeys("search");
+//		searchBar.submit();
+		
+//		driver.findElement(By.name("btnK")).click();
 
-		searchBar.sendKeys("search");
-				
-		
-		
-		
+			
 //		assertEquals("search", checkElement.getText());
 		
 		
