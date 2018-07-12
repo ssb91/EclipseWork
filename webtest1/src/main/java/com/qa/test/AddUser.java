@@ -2,6 +2,7 @@ package com.qa.test;
 
 import org.openqa.selenium.WebElement;
 
+
 import org.openqa.selenium.support.FindBy;
 
 import java.io.FileInputStream; 
@@ -33,10 +34,9 @@ public class AddUser {
 			nameBox.sendKeys(username);
 			
 			passwordBox.sendKeys(password);
-		
-			
+					
 			saveButton.click();			
-			toLogin.click();			
+			toLogin.click();						
 			
 		}
 	

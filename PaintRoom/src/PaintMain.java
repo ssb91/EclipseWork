@@ -12,12 +12,12 @@ public class PaintMain {
 	
 	public static double nTins(double pArea, double pVol, double rmArea) {
 		
-		return "Number of tins: " + rmArea/(pArea*pVol);
+		return rmArea/(pArea*pVol);
 		
 	}
 	
-//	pCost*nTins*pArea*pVol = (total) cost
-//	pCost*(rmArea/nTins) = (total) cost
+/*	pCost*nTins*pArea*pVol = (total) cost
+	pCost*(rmArea/nTins) = (total) cost
 	
 public static double cost(double pArea, double pVol, double rmArea) {
 	
@@ -25,6 +25,7 @@ public static double cost(double pArea, double pVol, double rmArea) {
 	
 }
 
+*/
 		
 	public static void main(String[] args) {
 
@@ -41,9 +42,9 @@ public static double cost(double pArea, double pVol, double rmArea) {
 		System.out.println(duluxourous);
 */
 		
-		System.out.println(cover(4,3.32));
+		System.out.println("Area covered per tin: " + cover(4,3.32));
 
-		System.out.println(nTins(2, 5, 40));
+		System.out.println("Number of tins: " + nTins(2, 5, 40));
 		
 	}
 	

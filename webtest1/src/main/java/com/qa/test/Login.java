@@ -1,6 +1,7 @@
 package com.qa.test;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 
 public class Login {
@@ -12,19 +13,26 @@ public class Login {
 	private WebElement passwordLoginBox;
 
 	@FindBy (xpath = "/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/p/input")
-	private WebElement loginButton;
+	private WebElement loginButton;	
 	
+	@FindBy (xpath = "/html/body/table/tbody/tr/td[1]/big/blockquote/blockquote/font/center/b")
+	private WebElement loginButtonConfirm;
 	
 	public void loginUser (String username, String password) {
 		
-		nameLoginBox.sendKeys(username);
-
-		
+		nameLoginBox.sendKeys(username);		
 		passwordLoginBox.sendKeys(password);
-	
-		
 		loginButton.click();			
 		
 	}
+
+	public String loginUser2 () {
+		
+		return loginButtonConfirm.getText();			
+		
+	}
+	
+	
+
 	
 }
